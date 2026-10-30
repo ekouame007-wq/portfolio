@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Charte graphique – Portfolio de Kouamé Brou Éric Landry</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --primary:#1B2A49; --secondary:#3A5A8C; --accent:#B08D57;
+  --text:#1F2937; --muted:#64748B; --bg:#F8FAFC; --surface:#EEF1F5; --card:#FFFFFF; --border:#D8DEE6;
+  --ok:#2F7D5B; --err:#B3412F; --link:#3A5A8C; --on-primary:#F8FAFC;
+  --ft:'Poppins',system-ui,Arial,sans-serif; --fb:'Inter',system-ui,Arial,sans-serif;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --primary:#8FB0E0; --secondary:#8FB0E0; --accent:#C9A66B;
+    --text:#E5E9F0; --muted:#94A3B8; --bg:#0F172A; --surface:#172033; --card:#1B2437; --border:#2B364D;
+    --ok:#5DBB93; --err:#E58A78; --link:#8FB0E0; --on-primary:#0F172A; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --primary:#8FB0E0; --secondary:#8FB0E0; --accent:#C9A66B;
+  --text:#E5E9F0; --muted:#94A3B8; --bg:#0F172A; --surface:#172033; --card:#1B2437; --border:#2B364D;
+  --ok:#5DBB93; --err:#E58A78; --link:#8FB0E0; --on-primary:#0F172A; color-scheme:dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1rem/1.7 var(--fb);-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--ft);line-height:1.2;margin:0;color:var(--primary)}
+h2{font-size:1.75rem;font-weight:700}
+h3{font-size:1.1rem;font-weight:600}
+p{margin:.5rem 0 0;max-width:62ch}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+section{padding:56px 0;border-top:1px solid var(--border)}
+.lead{color:var(--muted)}
+.mono,code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+
+/* hero */
+.hero{background:var(--primary);color:var(--on-primary);padding:56px 0 48px}
+.hero .wrap{display:grid;gap:32px;grid-template-columns:1fr;align-items:end}
+.sig{font:700 clamp(4rem,16vw,8.5rem)/.9 var(--ft);letter-spacing:-.02em;color:var(--on-primary)}
+.sig i{display:block;width:44%;height:6px;background:var(--accent);margin-top:14px}
+.hero h1{color:var(--on-primary);font-size:clamp(1.5rem,4vw,2.2rem);font-weight:700}
+.hero p{color:var(--on-primary);opacity:.8}
+.tbtn{margin-top:20px;font:500 .9rem var(--fb);color:var(--on-primary);background:transparent;border:1px solid currentColor;border-radius:6px;padding:8px 16px;cursor:pointer;opacity:.9}
+.tbtn:hover{opacity:1}
+.tbtn:focus-visible,.btn:focus-visible,.sw:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+@media(min-width:800px){.hero .wrap{grid-template-columns:1.2fr 1fr}}
+
+/* identité */
+.id-grid{display:grid;gap:16px;margin-top:28px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.tile{border-radius:8px;padding:28px;min-height:160px;display:flex;flex-direction:column;justify-content:space-between;border:1px solid var(--border)}
+.tile small{font-size:.85rem;opacity:.75}
+.t-light{background:#F8FAFC;color:#1B2A49}
+.t-navy{background:#1B2A49;color:#F8FAFC}
+.t-sand{background:#EEF1F5;color:#1B2A49}
+.mark{font:700 2.4rem/1 var(--ft)}
+.mark i{display:block;width:46%;height:4px;background:#B08D57;margin-top:8px}
+.fav{width:56px;height:56px;border-radius:12px;background:#1B2A49;color:#F8FAFC;display:grid;place-items:center;font:700 1.2rem var(--ft);position:relative}
+.fav::after{content:"";position:absolute;left:14px;right:22px;bottom:12px;height:3px;background:#B08D57}
+
+/* couleurs */
+.sws{display:grid;gap:12px;margin-top:28px;grid-template-columns:repeat(auto-fill,minmax(200px,1fr))}
+.sw{all:unset;cursor:pointer;display:flex;flex-direction:column;justify-content:flex-end;min-height:150px;padding:14px;border-radius:8px;border:1px solid var(--border);box-sizing:border-box}
+.sw b{font:600 1rem var(--ft)}
+.sw span{font-size:.85rem}
+.sw.big{grid-column:span 2;min-height:190px}
+.sw .hex{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.9rem}
+@media(max-width:480px){.sw.big{grid-column:span 1}}
+.ratio{display:flex;height:44px;border-radius:8px;overflow:hidden;margin-top:28px;border:1px solid var(--border)}
+.ratio div{display:flex;align-items:center;padding:0 12px;font-size:.85rem;font-weight:500;white-space:nowrap;overflow:hidden}
+.note{margin-top:12px;font-size:.9rem;color:var(--muted)}
+
+/* typo */
+.spec{display:grid;gap:16px;margin-top:28px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:24px;box-shadow:0 2px 8px rgba(15,23,42,.06)}
+.aa{font:700 4.5rem/1 var(--ft);color:var(--primary)}
+.aa.b{font:400 4.5rem/1 var(--fb)}
+.scale{margin-top:28px;border:1px solid var(--border);border-radius:8px;background:var(--card)}
+.row{display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:baseline;padding:14px 20px;border-bottom:1px solid var(--border)}
+.row:last-child{border-bottom:0}
+.row small{color:var(--muted);font-size:.8rem}
+
+/* grille */
+.space{margin-top:28px;display:grid;gap:8px}
+.sp{display:grid;grid-template-columns:70px 1fr;gap:12px;align-items:center;font-size:.85rem;color:var(--muted)}
+.sp i{display:block;height:16px;background:var(--secondary);border-radius:3px}
+.cols{margin-top:20px;display:grid;grid-template-columns:repeat(12,1fr);gap:8px;height:64px}
+.cols i{background:var(--surface);border:1px solid var(--border);border-radius:3px}
+
+/* composants */
+.comp{display:grid;gap:16px;margin-top:28px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.btn{font:500 1rem var(--fb);border-radius:6px;padding:10px 20px;cursor:pointer;transition:background .2s,color .2s;border:1px solid var(--primary)}
+.btn.p{background:var(--primary);color:var(--on-primary)}
+.btn.p:hover{background:var(--secondary);border-color:var(--secondary)}
+.btn.s{background:transparent;color:var(--primary)}
+.btn.s:hover{background:var(--surface)}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+label{display:block;font-weight:500;font-size:.9rem;margin-top:12px}
+input,textarea{width:100%;font:400 1rem var(--fb);color:var(--text);background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:10px 12px;margin-top:4px}
+input:focus,textarea:focus{border-color:var(--secondary)}
+.err{border-color:var(--err)}
+.msg{font-size:.85rem;color:var(--err);margin-top:4px}
+.tl{position:relative;margin:14px 0 0 8px;padding-left:22px;border-left:2px solid var(--border)}
+.tl div{position:relative;margin-bottom:16px}
+.tl div::before{content:"";position:absolute;left:-30px;top:6px;width:10px;height:10px;border-radius:50%;background:var(--primary)}
+.tl small{color:var(--muted)}
+.bar{height:8px;border-radius:4px;background:var(--surface);margin-top:6px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--secondary)}
+.nav{display:flex;gap:20px;border-bottom:1px solid var(--border);padding-bottom:10px;margin-top:14px;font-size:.95rem;flex-wrap:wrap}
+.nav span{color:var(--muted);padding-bottom:10px}
+.nav .on{color:var(--primary);font-weight:500;border-bottom:2px solid var(--accent)}
+
+/* règles */
+.rules{display:grid;gap:16px;margin-top:28px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.rules ul{margin:10px 0 0;padding-left:20px}
+.rules li{margin-bottom:4px}
+.yes h3{color:var(--ok)}
+.no h3{color:var(--err)}
+
+pre{background:#0F172A;color:#E5E9F0;border-radius:8px;padding:20px;overflow-x:auto;font-size:.85rem;line-height:1.6;margin:28px 0 0}
+footer{padding:32px 0;border-top:1px solid var(--border);color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="sig">KBEL<i></i></div>
+    <div>
+      <h1>Charte graphique</h1>
+      <p>Portfolio de Kouamé Brou Éric Landry. Une identité sobre, lisible et institutionnelle, dans le prolongement du bleu profond de son CV.</p>
+      <button class="tbtn" id="theme" type="button">Voir en mode sombre</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section id="identite">
+  <h2>Identité visuelle</h2>
+  <p class="lead">Beaucoup d’espace blanc, peu de couleurs, une hiérarchie typographique nette. La signature KBEL en Poppins 700 remplace le logo.</p>
+  <div class="id-grid">
+    <div class="tile t-light"><div class="mark">KBEL<i></i></div><small>Sur fond clair</small></div>
+    <div class="tile t-navy"><div class="mark" style="color:#F8FAFC">KBEL<i></i></div><small>Sur bleu nuit</small></div>
+    <div class="tile t-sand"><div class="fav">K</div><small>Favicon SVG, 32 × 32 px</small></div>
+  </div>
+  <p class="note">Marge de protection autour de la signature : la hauteur de la lettre K. Ne jamais étirer, incliner ni changer la couleur du filet sable.</p>
+</section>
+
+<section id="couleurs">
+  <h2>Palette de couleurs</h2>
+  <p class="lead">Cliquez sur une couleur pour copier son code. Les rapports de contraste sont calculés par rapport au blanc cassé.</p>
+  <div class="sws">
+    <button class="sw big" data-hex="#1B2A49" style="background:#1B2A49;color:#F8FAFC"><b>Bleu nuit</b><span class="hex">#1B2A49</span><span>Principale · titres, boutons, pied de page · ≈ 13:1</span></button>
+    <button class="sw big" data-hex="#3A5A8C" style="background:#3A5A8C;color:#F8FAFC"><b>Bleu acier</b><span class="hex">#3A5A8C</span><span>Secondaire · liens, icônes, survol · ≈ 6,7:1</span></button>
+    <button class="sw" data-hex="#B08D57" style="background:#B08D57;color:#1B2A49"><b>Sable doré</b><span class="hex">#B08D57</span><span>Accent · filets, puces · décor seulement</span></button>
+    <button class="sw" data-hex="#1F2937" style="background:#1F2937;color:#F8FAFC"><b>Anthracite</b><span class="hex">#1F2937</span><span>Texte courant · ≈ 14:1</span></button>
+    <button class="sw" data-hex="#64748B" style="background:#64748B;color:#F8FAFC"><b>Gris ardoise</b><span class="hex">#64748B</span><span>Texte secondaire · ≈ 4,6:1</span></button>
+    <button class="sw" data-hex="#F8FAFC" style="background:#F8FAFC;color:#1B2A49"><b>Blanc cassé</b><span class="hex">#F8FAFC</span><span>Fond principal</span></button>
+    <button class="sw" data-hex="#EEF1F5" style="background:#EEF1F5;color:#1B2A49"><b>Gris perle</b><span class="hex">#EEF1F5</span><span>Fond alterné, cartes</span></button>
+    <button class="sw" data-hex="#D8DEE6" style="background:#D8DEE6;color:#1B2A49"><b>Gris clair</b><span class="hex">#D8DEE6</span><span>Bordures, séparateurs</span></button>
+    <button class="sw" data-hex="#2F7D5B" style="background:#2F7D5B;color:#F8FAFC"><b>Vert sobre</b><span class="hex">#2F7D5B</span><span>Succès</span></button>
+    <button class="sw" data-hex="#B3412F" style="background:#B3412F;color:#F8FAFC"><b>Rouge brique</b><span class="hex">#B3412F</span><span>Erreur</span></button>
+  </div>
+  <div class="ratio" aria-label="Répartition 60, 30, 10">
+    <div style="flex:60;background:#F8FAFC;color:#1B2A49">60 % fonds clairs</div>
+    <div style="flex:30;background:#1B2A49;color:#F8FAFC">30 % bleu nuit et gris</div>
+    <div style="flex:10;background:#3A5A8C;color:#F8FAFC">10 %</div>
+  </div>
+  <p class="note">Le sable ne s’utilise jamais comme couleur de texte sur fond clair : son contraste (≈ 3:1) est insuffisant.</p>
+</section>
+
+<section id="typographie">
+  <h2>Typographie</h2>
+  <p class="lead">Deux familles, deux graisses chacune, pour un chargement rapide.</p>
+  <div class="spec">
+    <div class="card"><div class="aa">Aa</div><h3 style="margin-top:12px">Poppins · titres</h3><p>Graisses 600 et 700. Secours : system-ui, Arial.</p></div>
+    <div class="card"><div class="aa b">Aa</div><h3 style="margin-top:12px">Inter · texte courant</h3><p>Graisses 400 et 500. Secours : system-ui, Arial.</p></div>
+  </div>
+  <div class="scale">
+    <div class="row"><small>H1 · 3 rem</small><div style="font:700 2.4rem/1.2 var(--ft);color:var(--primary)">Kouamé Brou Éric Landry</div></div>
+    <div class="row"><small>H2 · 2 rem</small><div style="font:700 1.8rem/1.25 var(--ft);color:var(--primary)">Expériences professionnelles</div></div>
+    <div class="row"><small>H3 · 1,25 rem</small><div style="font:600 1.25rem/1.3 var(--ft);color:var(--primary)">Technicien bureautique</div></div>
+    <div class="row"><small>Texte · 1 rem</small><div>Installation, configuration et maintenance des logiciels bureautiques.</div></div>
+    <div class="row"><small>Légende · 0,875 rem</small><div style="font-size:.875rem;color:var(--muted)">Abidjan, Côte d’Ivoire · 2022 à aujourd’hui</div></div>
+  </div>
+</section>
+
+<section id="grille">
+  <h2>Grille et espacement</h2>
+  <p class="lead">Contenu centré sur 1100 px maximum, grille de 12 colonnes sur ordinateur, 2 sur tablette, 1 sur mobile. Espacements en multiples de 8 px.</p>
+  <div class="cols" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="space">
+    <div class="sp"><span>8 px</span><i style="width:8px"></i></div>
+    <div class="sp"><span>16 px</span><i style="width:16px"></i></div>
+    <div class="sp"><span>24 px</span><i style="width:24px"></i></div>
+    <div class="sp"><span>32 px</span><i style="width:32px"></i></div>
+    <div class="sp"><span>48 px</span><i style="width:48px"></i></div>
+    <div class="sp"><span>64 px</span><i style="width:64px"></i></div>
+    <div class="sp"><span>96 px</span><i style="width:96px"></i></div>
+  </div>
+  <p class="note">Points de rupture : 480 px, 768 px, 1024 px. Approche mobile first.</p>
+</section>
+
+<section id="composants">
+  <h2>Composants</h2>
+  <p class="lead">Ces éléments sont réels : survolez-les et naviguez au clavier pour voir les états.</p>
+  <div class="comp">
+    <div class="card">
+      <h3>Boutons</h3>
+      <div class="btns"><button class="btn p" type="button">Télécharger mon CV</button><button class="btn s" type="button">Me contacter</button></div>
+      <p class="note">Rayon 6 px, transition 200 ms au survol.</p>
+    </div>
+    <div class="card">
+      <h3>Formulaire</h3>
+      <label for="n">Nom</label><input id="n" type="text" placeholder="Votre nom">
+      <label for="e">E-mail</label><input id="e" class="err" type="email" value="nom@exemple">
+      <div class="msg">Saisissez une adresse e-mail complète.</div>
+    </div>
+    <div class="card">
+      <h3>Navigation</h3>
+      <div class="nav"><span class="on">Accueil</span><span>Compétences</span><span>Projets</span><span>Contact</span></div>
+      <p class="note">Le lien actif est souligné d’un filet sable.</p>
+      <h3 style="margin-top:20px">Niveau de compétence</h3>
+      <div style="display:flex;justify-content:space-between;font-size:.9rem;margin-top:8px"><span>Microsoft Excel</span><span>Avancé</span></div>
+      <div class="bar"><i style="width:85%"></i></div>
+      <div style="display:flex;justify-content:space-between;font-size:.9rem;margin-top:10px"><span>Anglais</span><span>Débutant</span></div>
+      <div class="bar"><i style="width:25%"></i></div>
+    </div>
+    <div class="card">
+      <h3>Chronologie</h3>
+      <div class="tl">
+        <div><b>Technicien bureautique</b><br><small>Abidjan · depuis 2022</small></div>
+        <div><b>Assistant administratif informatisé</b><br><small>Abidjan · 2021-2022</small></div>
+        <div><b>Agent de numérisation</b><br><small>Abidjan · 2020-2021</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="regles">
+  <h2>Bon usage</h2>
+  <div class="rules">
+    <div class="card yes"><h3>À faire</h3><ul>
+      <li>Garder le bleu nuit pour les titres et actions principales</li>
+      <li>Laisser respirer : 96 px entre sections</li>
+      <li>Décrire chaque image avec un texte alternatif</li>
+      <li>Respecter la préférence « réduire les animations »</li>
+    </ul></div>
+    <div class="card no"><h3>À éviter</h3><ul>
+      <li>Utiliser plus de trois couleurs dans un même écran</li>
+      <li>Écrire du texte en sable sur fond clair</li>
+      <li>Ajouter des dégradés, ombres lourdes ou animations en boucle</li>
+      <li>Mélanger plus de deux familles de polices</li>
+    </ul></div>
+  </div>
+  <p class="note">Animations : apparition en fondu de 400 à 600 ms avec 20 px de déplacement, une seule fois. Transitions au survol : 200 ms.</p>
+</section>
+
+<section id="tokens">
+  <h2>Variables CSS</h2>
+  <p class="lead">À copier dans variables.css : aucune couleur ne doit être écrite en dur ailleurs.</p>
+<pre>:root {
+  --color-primary:   #1B2A49;
+  --color-secondary: #3A5A8C;
+  --color-accent:    #B08D57;
+  --color-text:      #1F2937;
+  --color-muted:     #64748B;
+  --color-bg:        #F8FAFC;
+  --color-surface:   #EEF1F5;
+  --color-border:    #D8DEE6;
+  --font-title: 'Poppins', system-ui, Arial, sans-serif;
+  --font-body:  'Inter', system-ui, Arial, sans-serif;
+  --radius: 8px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #8FB0E0;
+    --color-bg:      #0F172A;
+    --color-surface: #1B2437;
+    --color-text:    #E5E9F0;
+    --color-muted:   #94A3B8;
+    --color-accent:  #C9A66B;
+  }
+}</pre>
+</section>
+
+</main>
+<footer><div class="wrap">Charte graphique v1.0 · Octobre 2026</div></footer>
+
+<script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById('theme');
+  function isDark(){
+    var t=root.getAttribute('data-theme');
+    if(t) return t==='dark';
+    return window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+  function label(){ btn.textContent = isDark() ? 'Voir en mode clair' : 'Voir en mode sombre'; }
+  btn.addEventListener('click',function(){
+    root.setAttribute('data-theme', isDark() ? 'light' : 'dark');
+    label();
+  });
+  label();
+  document.querySelectorAll('.sw').forEach(function(s){
+    s.addEventListener('click',function(){
+      var hex=s.getAttribute('data-hex'), hexEl=s.querySelector('.hex'), old=hexEl.textContent;
+      function done(){ hexEl.textContent='Copié'; setTimeout(function(){hexEl.textContent=old;},1200); }
+      try{
+        if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(hex).then(done,function(){}); }
+        else{ done(); }
+      }catch(e){}
+    });
+  });
+})();
+</script>
+</body>
+</html>
