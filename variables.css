@@ -1,0 +1,161 @@
+/**
+ * Variables CSS globales – Charte graphique KBEL (v2.0 – Palette "Végétal")
+ * Palette imposée : #ECF39E · #90A955 · #4F772D · #FFFFFF · #000000
+ * Centralise tous les tokens de design : couleurs, typographies, espacements, ombres.
+ * Aucune couleur ne doit être écrite en dur dans les autres feuilles de style.
+ */
+
+:root {
+  /* --- Couleurs de base de la palette (ne jamais utiliser directement dans les composants) --- */
+  --palette-lime: #ECF39E;     /* Vert citron clair : accents lumineux, texte sur fond noir */
+  --palette-sage: #90A955;     /* Vert sauge : décors, jauges, filets, bordures actives */
+  --palette-forest: #4F772D;   /* Vert forêt : liens, boutons, icônes (contraste 5.9:1 sur blanc) */
+  --palette-white: #FFFFFF;
+  --palette-black: #000000;
+
+  /* --- Rôles sémantiques (Mode Clair) --- */
+  --color-primary: #000000;          /* Titres et boutons principaux */
+  --color-primary-light: #1A1A1A;    /* Variante légèrement éclaircie */
+  --color-secondary: #4F772D;        /* Liens, icônes, survols */
+  --color-secondary-hover: #3C5A22;  /* Vert forêt assombri pour les états interactifs */
+  --color-accent: #90A955;           /* Filets décoratifs, puces, jauges (décor uniquement) */
+  --color-accent-subtle: rgba(144, 169, 85, 0.18);
+  --color-lime: #ECF39E;             /* Accent lumineux (texte sur fond sombre) */
+  --color-focus: #4F772D;            /* Anneau de focus clavier (contraste ≥ 3:1) */
+
+  /* --- Surfaces & Arrière-plans (Règle 60% moderne et épurée) --- */
+  --color-bg: #FFFFFF;               /* Fond de page principal blanc pur */
+  --color-surface: #F5F7F2;          /* Fond alterné : écru végétal très doux, frais et lumineux */
+  --color-card: #FFFFFF;             /* Cartes */
+  --color-card-hover: #FAFBF8;       /* Élévation délicate au survol */
+  --color-border: #E0E7DC;           /* Bordures douces et nettes */
+  --color-border-subtle: #EDF2EA;
+
+  /* --- Textes --- */
+  --color-text: #000000;
+  --color-muted: #4D4D4D;            /* Texte secondaire (contraste 8.5:1 sur blanc) */
+  --color-on-primary: #FFFFFF;       /* Texte sur boutons noirs */
+
+  /* --- Zones sombres (Héro, Pied de page, En-tête) --- */
+  --hero-bg: #000000;
+  --hero-fg: #FFFFFF;
+  --hero-fg-muted: rgba(255, 255, 255, 0.82);
+  --header-bg: rgba(255, 255, 255, 0.9);
+
+  /* --- États système --- */
+  --color-success: #4F772D;
+  --color-success-bg: #EDF4E8;
+  --color-error: #B3261E;            /* Rouge fonctionnel hors palette (erreurs de formulaire) */
+  --color-error-bg: #FDECEA;
+
+  /* --- Typographies --- */
+  --font-title: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+
+  /* --- Échelle d'espacements (multiples de 8px) --- */
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+
+  /* --- Rayons de bordure (arrondis plus généreux) --- */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* --- Ombres --- */
+  --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-card: 0 6px 20px rgba(79, 119, 45, 0.08);
+  --shadow-hover: 0 14px 32px rgba(79, 119, 45, 0.18);
+  --shadow-nav: 0 2px 10px rgba(0, 0, 0, 0.05);
+
+  /* --- Transitions --- */
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 200ms ease-in-out;
+  --transition-smooth: 350ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 500ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  --container-max-width: 1100px;
+}
+
+/* --- Mode Sombre automatique (préférence système) --- */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-primary: #ECF39E;
+    --color-primary-light: #F3F8C0;
+    --color-secondary: #90A955;
+    --color-secondary-hover: #ECF39E;
+    --color-accent: #90A955;
+    --color-accent-subtle: rgba(144, 169, 85, 0.22);
+    --color-focus: #ECF39E;
+
+    --color-bg: #000000;
+    --color-surface: #0A0E07;
+    --color-card: #10160B;
+    --color-card-hover: #172010;
+    --color-border: #2A3A1D;
+    --color-border-subtle: #1C2814;
+
+    --color-text: #FFFFFF;
+    --color-muted: #B8C2A6;
+    --color-on-primary: #000000;
+
+    --hero-bg: #0A0E07;
+    --header-bg: rgba(0, 0, 0, 0.88);
+
+    --color-success: #90A955;
+    --color-success-bg: rgba(144, 169, 85, 0.15);
+    --color-error: #FF8A80;
+    --color-error-bg: rgba(255, 138, 128, 0.12);
+
+    --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.5);
+    --shadow-card: 0 6px 20px rgba(0, 0, 0, 0.5);
+    --shadow-hover: 0 14px 32px rgba(144, 169, 85, 0.22);
+    --shadow-nav: 0 2px 12px rgba(0, 0, 0, 0.6);
+    color-scheme: dark;
+  }
+}
+
+/* --- Mode Sombre forcé par le bouton de bascule --- */
+:root[data-theme="dark"] {
+  --color-primary: #ECF39E;
+  --color-primary-light: #F3F8C0;
+  --color-secondary: #90A955;
+  --color-secondary-hover: #ECF39E;
+  --color-accent: #90A955;
+  --color-accent-subtle: rgba(144, 169, 85, 0.22);
+  --color-focus: #ECF39E;
+
+  --color-bg: #000000;
+  --color-surface: #0A0E07;
+  --color-card: #10160B;
+  --color-card-hover: #172010;
+  --color-border: #2A3A1D;
+  --color-border-subtle: #1C2814;
+
+  --color-text: #FFFFFF;
+  --color-muted: #B8C2A6;
+  --color-on-primary: #000000;
+
+  --hero-bg: #0A0E07;
+  --header-bg: rgba(0, 0, 0, 0.88);
+
+  --color-success: #90A955;
+  --color-success-bg: rgba(144, 169, 85, 0.15);
+  --color-error: #FF8A80;
+  --color-error-bg: rgba(255, 138, 128, 0.12);
+
+  --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.5);
+  --shadow-card: 0 6px 20px rgba(0, 0, 0, 0.5);
+  --shadow-hover: 0 14px 32px rgba(144, 169, 85, 0.22);
+  --shadow-nav: 0 2px 12px rgba(0, 0, 0, 0.6);
+  color-scheme: dark;
+}
