@@ -1,0 +1,42 @@
+[
+  {
+    "category": "Suites Bureautiques Avancées",
+    "icon": "file-text",
+    "skills": [
+      { "name": "Microsoft Excel (Formules, TCD, Tableaux de bord)", "level": 90, "label": "Avancé" },
+      { "name": "Microsoft Word (Publipostage, rapports, styles)", "level": 95, "label": "Expert" },
+      { "name": "Microsoft PowerPoint (Présentations exécutives)", "level": 85, "label": "Maîtrisé" },
+      { "name": "Microsoft Access & Outlook (Bases & flux)", "level": 80, "label": "Maîtrisé" }
+    ]
+  },
+  {
+    "category": "Systèmes & Maintenance Informatique",
+    "icon": "monitor",
+    "skills": [
+      { "name": "Système Windows 10 & 11 Pro (Déploiement)", "level": 90, "label": "Avancé" },
+      { "name": "Systèmes Linux (Ubuntu Desktop, Terminal)", "level": 80, "label": "Maîtrisé" },
+      { "name": "Réseau local, imprimantes & partages", "level": 85, "label": "Maîtrisé" },
+      { "name": "Sauvegarde & Restauration système", "level": 85, "label": "Maîtrisé" }
+    ]
+  },
+  {
+    "category": "Développement Web Front-End",
+    "icon": "code",
+    "skills": [
+      { "name": "HTML5 Sémantique & Accessibilité (WCAG AA)", "level": 85, "label": "Solide" },
+      { "name": "CSS3 Moderne (Variables, Flexbox, Grid, BEM)", "level": 80, "label": "Solide" },
+      { "name": "JavaScript ES6+ (DOM, Fetch, Modules)", "level": 75, "label": "Intermédiaire" },
+      { "name": "Gestion de versions Git & GitHub", "level": 75, "label": "Intermédiaire" }
+    ]
+  },
+  {
+    "category": "Administration Numérique & GED",
+    "icon": "archive",
+    "skills": [
+      { "name": "Numérisation haute fidélité & Indexation GED", "level": 90, "label": "Avancé" },
+      { "name": "Reporting automatisé & Suivi de gestion", "level": 90, "label": "Avancé" },
+      { "name": "Support utilisateur & Pédagogie", "level": 85, "label": "Confirmé" },
+      { "name": "Conformité & Sécurité des données", "level": 85, "label": "Confirmé" }
+    ]
+  }
+]

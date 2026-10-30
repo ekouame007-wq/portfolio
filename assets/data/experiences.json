@@ -1,0 +1,30 @@
+[
+  {
+    "role": "Technicien Bureautique & Support Informatique",
+    "location": "Abidjan, Côte d'Ivoire",
+    "period": "Depuis 2022 · Poste actuel",
+    "description": "Responsable du parc bureautique et de l'assistance informatique. Déploiement et paramétrage d'Office 365 et logiciels métiers. Maintenance de premier niveau sous Windows 10/11 et Linux Ubuntu. Support technique réactif aux collaborateurs et sensibilisation aux bonnes pratiques de productivité.",
+    "tags": ["Microsoft Office 365", "Windows 10/11", "Ubuntu Linux", "Support Niveau 1", "Réseau Local"]
+  },
+  {
+    "role": "Assistant Administratif Informatisé",
+    "location": "Abidjan, Côte d'Ivoire",
+    "period": "2021 – 2022",
+    "description": "Conception et automatisation de tableaux de bord Excel de gestion avec graphiques d'analyse et indicateurs de performance. Gestion électronique des documents (GED), rédaction administrative normalisée sous Word et fiabilisation des flux de correspondance.",
+    "tags": ["Excel Avancé", "Tableaux Croisés", "Word Pro", "GED", "Reporting Mensuel"]
+  },
+  {
+    "role": "Agent de Numérisation & d'Archivage Électronique",
+    "location": "Abidjan, Côte d'Ivoire",
+    "period": "2020 – 2021",
+    "description": "Exécution de campagnes volumineuses de transition numérique. Numérisation de masse de documents physiques sensibles, contrôle qualité rigoureux de la conformité visuelle, indexation méthodique des métadonnées et structuration d'arborescences sécurisées.",
+    "tags": ["Numérisation Industrielle", "Indexation Métadonnées", "Archivage Sécurisé", "Contrôle Qualité"]
+  },
+  {
+    "role": "Promoteur de Services MTN Mobile Money",
+    "location": "Abidjan, Côte d'Ivoire",
+    "period": "2019 – 2020",
+    "description": "Gestion des transactions financières numériques et opérations de caisse dématérialisées. Accueil, accompagnement client, rapprochement comptable journalier et respect des procédures de conformité financière.",
+    "tags": ["Transactions Numériques", "Gestion de Caisse", "Relation Client", "Conformité"]
+  }
+]

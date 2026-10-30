@@ -1,0 +1,54 @@
+[
+  {
+    "id": "portfolio-kbel",
+    "title": "Portfolio Web Personnel KBEL",
+    "category": "web",
+    "categoryLabel": "Développement Web",
+    "summary": "Site vitrine statique moderne, ultra-rapide et accessible, conçu sans framework en HTML5 sémantique, CSS3 modulaire et JavaScript ES6.",
+    "description": "Conception et développement complet de ce portfolio professionnel. Mise en œuvre des normes d'accessibilité WCAG AA, thèmes clair et sombre automatiques et mémorisés, navigation par défilement fluide avec observateur d'intersection (IntersectionObserver), et optimisation Lighthouse supérieure à 95 points.",
+    "image": "assets/img/projects/portfolio-kbel.webp",
+    "technologies": ["HTML5 Sémantique", "CSS3 Modulaire (BEM)", "JavaScript ES6+", "IntersectionObserver", "LocalStorage"],
+    "metrics": "Score Lighthouse > 95 · Poids total < 1.5 Mo · Temps de chargement < 0.8s",
+    "demoUrl": "#accueil",
+    "githubUrl": "https://github.com/kouame-eric/portfolio"
+  },
+  {
+    "id": "dashboard-excel",
+    "title": "Tableau de Bord Commercial & Financier",
+    "category": "bureautique",
+    "categoryLabel": "Bureautique Avancée",
+    "summary": "Modèle automatisé de pilotage commercial sous Microsoft Excel avec indicateurs de performance (KPIs) et graphiques interactifs.",
+    "description": "Création d'un outil d'aide à la décision complet pour PME : consolidation des ventes multi-régions, automatisation des calculs avec formules complexes (RECHERCHEX, INDEX/EQUIV, SOMME.SI.ENS), segments dynamiques (slicers) et restitution visuelle des tendances mensuelles.",
+    "image": "assets/img/projects/dashboard-excel.webp",
+    "technologies": ["Microsoft Excel Avancé", "Tableaux Croisés Dynamiques", "Formules Matricielles", "Visualisation de Données"],
+    "metrics": "Gain de temps de 70% sur le reporting mensuel · Zéro erreur de saisie",
+    "demoUrl": "#contact",
+    "githubUrl": null
+  },
+  {
+    "id": "guide-formation",
+    "title": "Guide Pratique : Maîtriser Word & Excel",
+    "category": "administratif",
+    "categoryLabel": "Formation & Support",
+    "summary": "Support didactique illustré de formation bureautique pour accélérer la productivité quotidienne des agents administratifs.",
+    "description": "Rédaction et mise en page d'un guide pédagogique pas-à-pas de 35 pages : structuration de documents professionnels dans Word (styles, sommaires automatisés, publipostage) et automatisation de calculs courants dans Excel (tableaux structurés, validation des données).",
+    "image": "assets/img/projects/guide-bureautique.webp",
+    "technologies": ["Microsoft Word Avancé", "Microsoft Excel", "Pédagogie Numérique", "Conception Documentaire"],
+    "metrics": "35 pages de méthodologie claire · Plus de 20 cas pratiques résolus",
+    "demoUrl": "#contact",
+    "githubUrl": null
+  },
+  {
+    "id": "maintenance-systeme",
+    "title": "Procédure de Déploiement & Maintenance OS",
+    "category": "bureautique",
+    "categoryLabel": "Systèmes & Maintenance",
+    "summary": "Documentation technique et protocole d'installation, de sécurisation et de dépannage de parcs informatiques Windows et Linux.",
+    "description": "Élaboration d'un protocole standardisé pour le déploiement de postes de travail en entreprise : installation de Windows 10/11 Pro et Ubuntu Linux, configuration des suites logicielles bureautiques, raccordement aux imprimantes réseau, paramétrage des sauvegardes et diagnostic matériel/logiciel.",
+    "image": "assets/img/projects/maintenance-systeme.webp",
+    "technologies": ["Windows 10/11 Pro", "Ubuntu Linux", "Réseaux Locaux & Partages", "Sauvegarde & Sécurité"],
+    "metrics": "Temps de préparation d'un poste réduit de 45 minutes · Checklist zéro oubli",
+    "demoUrl": "#contact",
+    "githubUrl": null
+  }
+]
